@@ -1,0 +1,25 @@
+{
+  "name": "ant-world",
+  "version": "0.0.1",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhaugh42/ant-world.git"
+  },
+  "optionalDependencies": {
+    "mocha": "2.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "For Fun",
+  "license": "none",
+  "homepage": "https://github.com/jhaugh42/ant-world",
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/jhaugh42/ant-world/issues"
+  },
+  "dependencies": {
+    "mocha": "2.0.1"
+  }
+}
