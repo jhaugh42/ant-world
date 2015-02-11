@@ -20,6 +20,7 @@
     "url": "https://github.com/jhaugh42/ant-world/issues"
   },
   "dependencies": {
+    "express": "^4.11.2",
     "mocha": "2.0.1"
   }
 }
