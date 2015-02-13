@@ -11,14 +11,17 @@ app.get('/', function (req, res) {
 });
 
 app.get('/world', function (req, res) {
-    res.send(world.getAntCount());
+    res.send({numAnts : world.getAntCount(), numTicks: world.getNumTicks()});
 });
 
-var server = app.listen(3000, function () {
-
-    var host = server.address().address;
-    var port = server.address().port;
-
-    console.log('Example app listening at http://%s:%s', host, port);
-
+app.post('/world/start', function(req, res) {
+    world.start();
+    res.send({message: 'starting world'});
 });
+
+app.post('/world/stop', function(req, res) {
+    world.stop();
+    res.send({message: 'stopping world'});
+});
+
+var server = app.listen(3000);
